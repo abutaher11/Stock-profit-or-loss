@@ -20,6 +20,10 @@ function calculateProfitAndLoss(initial,quantity,current){
         outputBox.style.color = "#6EE787";
         showMessage(`The profit amount is ${profit} and the profit percent is ${profitPercentage}%`)
     }
+    else {
+        outputBox.style.color = "#6EE787";
+        showMessage("No pain no gain and no gain no pain")
+    }
 }
 
 

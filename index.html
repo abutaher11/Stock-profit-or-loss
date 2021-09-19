@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Stocks</title>
 </head>
 <body>
+    <div class="container">
+        <h1 class="heading">Stock Profit & Loss Calculator</h1>
+        <label for="inital-price">Intial Price</label>
+        <input type="number" placeholder="Enter Initial Price Here" id="inital-price">
+        
+        <label for="stocks-quantity">Quantity of Stocks</label>
+        <input type="number" placeholder="Enter The Number Of Stocks bought" id="stocks-quantity">
+        
+        <label for="current-price">Current Price</label>
+        <input type="number" placeholder="Enter The Current Price Of Stocks" id="current-price">
+        
+        <button id="check-btn">Tell Me!</button>
+        <div id="output-box"></div>
+
+    </div>
     
 </body>
 <script src="app.js"></script>

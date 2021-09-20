@@ -11,13 +11,13 @@
     <div class="container">
         <h1 class="heading">Stock Profit & Loss Calculator</h1>
         <label for="inital-price">Intial Price</label>
-        <input type="number" placeholder="Enter Initial Price Here" id="inital-price">
+        <input type="number" placeholder="Enter Initial Price Here" id="inital-price" min="0">
         
         <label for="stocks-quantity">Quantity of Stocks</label>
-        <input type="number" placeholder="Enter The Number Of Stocks bought" id="stocks-quantity">
+        <input type="number" placeholder="Enter The Number Of Stocks bought" id="stocks-quantity" min="1">
         
         <label for="current-price">Current Price</label>
-        <input type="number" placeholder="Enter The Current Price Of Stocks" id="current-price">
+        <input type="number" placeholder="Enter The Current Price Of Stocks" id="current-price" min="0">
         
         <button id="calculate-btn">Tell Me!</button>
         <div id="output-box"></div>

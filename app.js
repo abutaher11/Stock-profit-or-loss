@@ -9,14 +9,14 @@ function calculateProfitAndLoss(initial,quantity,current){
     if(initial > current) {
 
         let loss = (initial - current)*quantity;
-        let lossPercentage = (loss/initial)*100;
+        let lossPercentage = ((initial - current)/initial)*100;
         outputBox.style.color = "red";
         showMessage(`The loss amount is ${loss} and the loss percent is ${lossPercentage}%`)
     }
     else if(current > initial) {
 
         let profit = (current - initial)*quantity;
-        let profitPercentage = (profit/initial)*100;
+        let profitPercentage = ((current - initial)/initial)*100;
         outputBox.style.color = "#6EE787";
         showMessage(`The profit amount is ${profit} and the profit percent is ${profitPercentage}%`)
     }
@@ -34,7 +34,7 @@ function calculateStonks() {
     const qty = Number(stocksQty.value);
     const cp = Number(currentPrice.value);
 
-    if(ip && qty && cp) {
+    if(ip>0 && qty>0 && cp>0) {
         calculateProfitAndLoss(ip, qty, cp)
     }
     else {
